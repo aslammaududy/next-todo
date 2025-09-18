@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export const config = {
     // Kecualikan static assets, favicon, dan endpoint ingestion
-    matcher: ["/((?!_next/static|_next/image|favicon.ico|api/ingest).*)"],
+    matcher: ["/((?!_next/static|_next/image|favicon.ico|api/ingest|log).*)"],
 };
 
 export function middleware(req: NextRequest) {
